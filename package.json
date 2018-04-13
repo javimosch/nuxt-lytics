@@ -1,6 +1,6 @@
 {
   "name": "nuxt-lytics",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Nuxt module",
   "license": "MIT",
   "contributors": [
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "lint": "eslint lib",
-    "release": "standard-version && git push --follow-tags && npm publish"
+    "release": "standard-version && git push --follow-tags"
   },
   "eslintIgnore": [
     "lib/templates/*.*"
@@ -23,7 +23,9 @@
   "files": [
     "lib"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
   "devDependencies": {
     "nuxt-module-builder": "latest"
   }
