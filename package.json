@@ -1,21 +1,20 @@
 {
-  "name": "nuxt-multianalytics",
-  "version": "0.0.6",
+  "name": "nuxt-lytics",
+  "version": "0.0.2",
   "description": "Nuxt module",
   "license": "MIT",
   "contributors": [
     {
-      "name": "Antério Vieira <anteriovieira@gmail.com>"
+      "name": "Javier Leandro Arancibia <arancibiajav@gmail.com>"
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/anteriovieira/nuxt-multianalytics",
+  "repository": "https://github.com/javimosch/nuxt-lytics.git",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "lint": "eslint lib test",
-    "test": "npm run lint && jest",
+    "lint": "eslint lib",
     "release": "standard-version && git push --follow-tags && npm publish"
   },
   "eslintIgnore": [
@@ -24,18 +23,7 @@
   "files": [
     "lib"
   ],
-  "jest": {
-    "testEnvironment": "node",
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "lib",
-      "test"
-    ]
-  },
-  "dependencies": {
-    "vue-multianalytics": "^1.8.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "nuxt-module-builder": "latest"
   }
